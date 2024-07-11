@@ -4,11 +4,10 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
     id 'maven-publish'
-    id 'com.vanniktech.maven.publish'
 }
 
 android {
-namespace 'io.ak1.pix'
+    namespace 'io.ak1.pix'
     compileSdk 34
     defaultConfig {
         minSdkVersion 21
@@ -49,7 +48,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.amantheshooter'
                 artifactId = 'PixImagePicker'
-                version = '1.7.4'
+                version = '1.7.5'
             }
         }
     }
